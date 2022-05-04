@@ -83,19 +83,26 @@ public class SnapshotMode : MonoBehaviour
     {
         int lastIndex = filterIndex;
 
+        if(Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(1))
+        {
+            filterIndex = filterIndex;
+        }
+
         // Logic to swap between filters.
-        if(Input.GetMouseButtonDown(0))
+        if(Input.GetKey("up") || Input.GetButtonDown("Jump"))
         {
             if(--filterIndex < 0)
             {
                 filterIndex = filters.Count - 1;
+                print("up arrow key is held down");
             }
         }
-        else if (Input.GetMouseButtonDown(1))
+        else if (Input.GetKey("down"))
         {
             if(++filterIndex >= filters.Count)
             {
                 filterIndex = 0;
+                print("down arrow key is held down");
             }
         }
 

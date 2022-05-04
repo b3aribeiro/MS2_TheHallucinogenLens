@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b1e20b1465bf764b99239e2a0c36192, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  useCanvas: 1
+  useCanvas: 0
   snapshotCanvasPrefab: {fileID: 2654080978173619198, guid: 3a9765b469d010f4da2f7ecc008810d1, type: 3}
 --- !u!124 &8365270412526758452
 Behaviour:
@@ -115,7 +115,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7026526464012845513}
-  m_Enabled: 0
+  m_Enabled: 1
 --- !u!114 &5132677864203256331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -641,7 +641,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 568daaa0e6518224c8d1e8c98f929bbe, type: 2}
+  - {fileID: 2100000, guid: 848918a99d11f25f110026ca44295342, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -696,7 +696,7 @@ MonoBehaviour:
   camTrans: {fileID: 4098176747721996628}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   feetTrans: {fileID: 8763548207013389853}
   grounded: 1
 --- !u!136 &8763548206719068619

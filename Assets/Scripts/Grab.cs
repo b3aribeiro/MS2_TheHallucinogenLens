@@ -107,16 +107,8 @@ public class Grab : MonoBehaviour
         if (Physics.Raycast(camTrans.position, camTrans.forward, out hit, raycastDist) && hit.collider.gameObject.layer == grabbableLayer)
         {
             //If the retical is not already red change its color
-            if (!reticleTarget)
-            {
-                reticle.color = Color.red;
-                reticleTarget = true; //This bool keeps the color from updatiing if there is no change
-            }
+           
         }
-        else if (reticleTarget) //if no target is hit and the reticle is active then change it back to white
-        {
-            reticle.color = Color.white;
-            reticleTarget = false;
-        }
+        
     }
 }
