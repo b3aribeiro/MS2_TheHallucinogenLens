@@ -89,7 +89,7 @@ public class SnapshotMode : MonoBehaviour
         }
 
         // Logic to swap between filters.
-        if(Input.GetKey("up") || Input.GetButtonDown("Jump"))
+        if(Input.GetKey("down") || Input.GetButtonDown("Jump"))
         {
             if(--filterIndex < 0)
             {
@@ -97,7 +97,7 @@ public class SnapshotMode : MonoBehaviour
                 print("up arrow key is held down");
             }
         }
-        else if (Input.GetKey("down"))
+        else if (Input.GetKey("up"))
         {
             if(++filterIndex >= filters.Count)
             {
